@@ -1,0 +1,482 @@
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../img/title_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a:link {
+   color: white;
+    text-decoration: none;
+}
+
+a:visited {
+   color: white;
+    text-decoration: none;
+}
+
+a:hover {
+   color: white;
+    text-decoration: none;
+}
+
+#wrap {
+    min-width: 500px;
+}
+
+/* 구분 */
+
+#menu_container {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+}
+
+#menu_list {
+    position: absolute;
+    width: 350px;
+    top: 20px;
+    right: 120px;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+/* 구분 */
+
+#title_page_container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+#title_page_logo {
+    position: absolute;
+    width: 100%;
+    top: 230px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 100px;
+    color: white;  
+}
+
+/* 구분 */
+
+#about_page_container {
+    position: relative;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#about_page_title {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+}
+
+#about_title_p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+#about_page_profile {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 25px;
+    color: white;
+}
+
+#about_page_container p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* 구분 */
+
+#skill_page_container {
+    position: relative;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#skill_page_title {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+}
+
+#skill_title_p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+#skill_icon {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
+
+#skill_icon img {
+    margin: 5px;
+    width: 110px;
+}
+
+#skill_intro_p {    
+    margin-top: 30px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 25px;
+    color: white;
+}
+
+/* 구분 */
+
+#pofol_page_container {
+    position: relative;
+    width: 80%;
+    height: 970px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#pofol_page_title {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+}
+
+#pofol_title_p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+#pofol_1 {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#pofol_2 p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#pofol_left {
+    z-index: 8;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+#pofol_right {
+    z-index: 8;
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+#pofol_1_img {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#pofol_2_img {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#pofol_1_mouseover {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 185px;
+    height: 400px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+#pofol_2_mouseover {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+#pofol_1_mouseover p {
+    line-height: 400px;
+    color: white;
+}
+
+#pofol_2_mouseover p {
+    line-height: 350px;
+    color: white;
+}
+
+#pofol_1_intro {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 22px;
+    color: white;
+}
+
+#pofol_2_intro {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 22px;
+    color: white;
+}
+
+#enter {
+    display: none;
+}
+
+#pofol_1_intro_picture_div {
+    position: fixed;
+    overflow: scroll;
+    z-index: 9;
+    display: none;
+    width: 70%;
+    height: 700px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#pofol_1_intro_picture_div img {
+    width: 100%;
+}
+
+#GitBtn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 18px;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 구분 */
+
+#contact_page_container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+#contact_title_p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+#contact_email_p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+#contact_copy_p {
+    position: absolute;
+    width: 300px;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 0;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 14px;
+    color: white;
+}
+
+/* 반응형 */
+@media (max-width: 1300px) {
+    #about_page_container {
+        height: 650px;
+    }
+    
+    #skill_page_container {
+        height: 470px;
+    }
+    
+    #skill_intro_p  {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px){
+
+    #title_page_logo {
+        top: 260px;
+        font-size: 80px;
+    }  
+
+    #about_page_container {
+        height: 600px;
+    }
+    
+    #about_page_profile {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 20px;
+    }
+    
+    #skill_intro_p {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    
+    #contact_title_p {
+        font-size: 60px;
+    }
+    
+    #contact_email_p {
+        font-size: 30px;
+    }
+    
+    #skill_page_container {
+        height: 510px;
+    }
+    
+    #pofol_1_intro {
+        font-size: 18px;
+    }
+    
+    #pofol_2_intro {
+        font-size: 18px;
+    }
+    
+
+}
+
+@media (max-width: 800px){
+    
+    #menu_list {
+        display: none;
+    }
+    
+    #title_page_logo {
+        top: 280px;
+        font-size: 50px;
+    }  
+    
+    #about_page_container {
+        height: 480px;
+    }
+    
+    #about_page_profile {
+        padding-left: 10px;
+        padding-right: 9px;
+        font-size: 15px;
+    }
+    
+    #skill_page_container {
+        height: 550px;
+    }
+    
+    #skill_intro_p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    #pofol_1_intro {
+        font-size: 15px;
+        
+    }
+    
+    #pofol_2_intro {
+        font-size: 15px;
+    }
+    
+    #pofol_left {
+        left: 20px;
+    }
+    
+    #pofol_right {
+        right: 20px;
+    }
+    
+    #contact_title_p {
+        font-size: 50px;
+    }
+    
+    #contact_email_p {
+        font-size: 25px;
+    }
+    
+    #pofol_2_img img {
+        width: 250px;
+    }
+    
+    #pofol_2_mouseover {
+        width: 250px;
+    } 
+}
+
+    @media(max-width: 650px) {
+    
+        #about_page_container {
+            height: 500px;
+        }
+        
+        #enter {
+            display: block;
+        }
+        
+    }
+
