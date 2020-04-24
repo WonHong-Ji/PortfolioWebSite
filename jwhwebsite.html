@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible"content="IE=Edge">
     <title>JWH Portfolio Site</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="startfun()">
     <div id="wrap">
         <header id="menu">
            <div id="menu_container">
@@ -82,15 +81,15 @@
         <section id="pofol_page">
             <div id="pofol_page_container">
                 <a name="portfolio"></a>
-                <div id="pofol_left"><</div>
-                <div id="pofol_right">></div>
+                <div id="pofol_left" onclick="goLeft()"><</div>
+                <div id="pofol_right" onclick="goRight()">></div>
                 <div id="pofol_page_title">
                     <p id="pofol_title_p">portfolio</p>
                 </div>
                 <div id="pofol_1">
                     <div id="pofol_1_img">
                         <div id="pofol_1_mouseover"><p>click to introduce</p></div>
-                        <img src="img/pf1.png" style="border-radius: 30px; height: 400px;">
+                        <img src="img/pf1.png" onmouseover="" style="border-radius: 30px; height: 400px;">
                     </div>
                     <div id="pofol_1_intro">
                         <p><b>[ 스마트폰 컨셉의 프로그램 구현 ]</b><br><br>
@@ -105,7 +104,7 @@
                 <div id="pofol_2">
                     <div id="pofol_2_img">
                         <div id="pofol_2_mouseover"><p>개발 중입니다</p></div>
-                        <img src="img/pf2_intro_2.png" style="border-radius: 5px; height: 350px;">
+                        <img src="img/pf2_intro_2.png" onmouseover="" style="border-radius: 5px; height: 350px;">
                     </div>
                     <div id="pofol_2_intro">
                         <p><b>[ Servlet과 DB 이용한 MVC 모델2 기반 웹사이트 개발 ]</b><br><br>
@@ -147,64 +146,40 @@
     </div>
 <script>
    var pfSelect = 1;
-   
-    $(document).ready(function(){
-       if(pfSelect==1){
-           $('#pofol_2').css('display', 'none'); 
-           $('#pofol_1').fadeIn('fast');
-       } else if(pfSelect==2){
-           $('#pofol_1').css('display', 'none'); 
-           $('#pofol_2').fadeIn('fast');
-       }
-   });
     
-    $('#pofol_left').click(function(){
-       if(pfSelect==1){
-           $('#pofol_2').css('display', 'none'); 
-           $('#pofol_1').fadeIn('fast');
-           pfSelect = 2;
-       } else if(pfSelect==2){
-           $('#pofol_1').css('display', 'none'); 
-           $('#pofol_2').fadeIn('fast');
-           pfSelect = 1;
-       }
-    });
+    function startfun(){
+        if(pfSelect == 1){
+            document.getElementById('pofol_2').style.display = 'none';
+            document.getElementById('pofol_1').style.display = 'block';
+        } else if(pfSelect == 2){
+            document.getElementById('pofol_1').style.display = 'none';
+            document.getElementById('pofol_2').style.display = 'block';
+        }   
+    }
     
-    $('#pofol_right').click(function(){
-       if(pfSelect==1){
-           $('#pofol_2').css('display', 'none'); 
-           $('#pofol_1').fadeIn('fast');
-           pfSelect = 2;
-       } else if(pfSelect==2){
-           $('#pofol_1').css('display', 'none'); 
-           $('#pofol_2').fadeIn('fast');
-           pfSelect = 1;
-       }
-    });
+    function goLeft(){
+        if(pfSelect == 1){
+            document.getElementById('pofol_1').style.display = 'none';
+            document.getElementById('pofol_2').style.display = 'block';
+            pfSelect = 2;
+        } else if(pfSelect == 2){
+            document.getElementById('pofol_2').style.display = 'none';
+            document.getElementById('pofol_1').style.display = 'block';
+            pfSelect = 1;
+        }
+    }
     
-    $('#pofol_1_img img').mouseenter(function(){
-        $('#pofol_1_mouseover').css('display', 'block');
-    });
-    
-    $('#pofol_1_img img').mouseleave(function(){
-        $('#pofol_1_mouseover').css('display', 'none');
-    });
-    
-    $('#pofol_1_mouseover').click(function(){
-        $('#pofol_1_intro_picture_div').fadeIn('fast');
-    });
-    
-    $('#pofol_1_intro_picture_div').click(function(){
-        $('#pofol_1_intro_picture_div').fadeOut('fast');
-    });
-    
-    $('#pofol_2_img img').mouseenter(function(){
-        $('#pofol_2_mouseover').css('display', 'block');
-    });
-    
-    $('#pofol_2_img img').mouseleave(function(){
-        $('#pofol_2_mouseover').css('display', 'none');
-    });
+    function goRight(){
+        if(pfSelect == 1){
+            document.getElementById('pofol_1').style.display = 'none';
+            document.getElementById('pofol_2').style.display = 'block';
+            pfSelect = 2;
+        } else if(pfSelect == 2){
+            document.getElementById('pofol_2').style.display = 'none';
+            document.getElementById('pofol_1').style.display = 'block';
+            pfSelect = 1;
+        }
+    }
 
 </script>
 </body>
