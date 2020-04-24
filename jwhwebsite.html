@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible"content="IE=Edge">
     <title>JWH Portfolio Site</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="startfun()">
     <div id="wrap">
@@ -86,10 +87,10 @@
                 <div id="pofol_page_title">
                     <p id="pofol_title_p">portfolio</p>
                 </div>
-                <div id="pofol_1">
+                <div id="pofol_1" class="fadein">
                     <div id="pofol_1_img">
                         <div id="pofol_1_mouseover"><p>click to introduce</p></div>
-                        <img src="img/pf1.png" onmouseover="" style="border-radius: 30px; height: 400px;">
+                        <img src="img/pf1.png" onmouseover="blockpf1()" onmouseout="nonepf1()" style="border-radius: 30px; height: 400px;">
                     </div>
                     <div id="pofol_1_intro">
                         <p><b>[ 스마트폰 컨셉의 프로그램 구현 ]</b><br><br>
@@ -101,10 +102,10 @@
                         <a href="https://github.com/WonHong-Ji/Portfolio1" target="_blank"><input id="GitBtn" type="button" value="코드 보기"></a>
                     </div>
                 </div>
-                <div id="pofol_2">
+                <div id="pofol_2" class="fadein">
                     <div id="pofol_2_img">
                         <div id="pofol_2_mouseover"><p>개발 중입니다</p></div>
-                        <img src="img/pf2_intro_2.png" onmouseover="" style="border-radius: 5px; height: 350px;">
+                        <img src="img/pf2_intro_2.png" onmouseover="blockpf2()" onmouseout="nonepf2()" style="border-radius: 5px; height: 350px;">
                     </div>
                     <div id="pofol_2_intro">
                         <p><b>[ Servlet과 DB 이용한 MVC 모델2 기반 웹사이트 개발 ]</b><br><br>
@@ -180,6 +181,23 @@
             pfSelect = 1;
         }
     }
+    
+    function blockpf1(){
+        document.getElementById('pofol_1_mouseover').style.display = 'block';
+    }
+    
+    function nonepf1(){
+        document.getElementById('pofol_1_mouseover').style.display = 'none';
+    }
+    
+    function blockpf2(){
+        document.getElementById('pofol_2_mouseover').style.display = 'block';
+    }
+    
+    function nonepf2(){
+        document.getElementById('pofol_2_mouseover').style.display = 'none';
+    }
+    
 
 </script>
 </body>
