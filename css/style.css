@@ -16,6 +16,11 @@ body {
     background-attachment: fixed;
 }
 
+.fadein {
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
 a:link {
    color: white;
     text-decoration: none;
@@ -479,3 +484,23 @@ a:hover {
         }
         
     }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
