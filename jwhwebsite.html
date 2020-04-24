@@ -88,8 +88,8 @@
                 </div>
                 <div id="pofol_1" class="fadein">
                     <div id="pofol_1_img">
-                        <div id="pofol_1_mouseover"><p>click to introduce</p></div>
-                        <img src="img/pf1.png" onmouseover="blockpf1()" onmouseout="nonepf1()" style="border-radius: 30px; height: 400px;">
+                        <div id="pofol_1_mouseover" onclick="block_pf1()"><p>click to introduce</p></div>
+                        <img src="img/pf1.png" onmouseover="block_pf1_intro()" onmouseout="none_pf1_intro()" style="border-radius: 30px; height: 400px;">
                     </div>
                     <div id="pofol_1_intro">
                         <p><b>[ 스마트폰 컨셉의 프로그램 구현 ]</b><br><br>
@@ -103,8 +103,8 @@
                 </div>
                 <div id="pofol_2" class="fadein">
                     <div id="pofol_2_img">
-                        <div id="pofol_2_mouseover"><p>개발 중입니다</p></div>
-                        <img src="img/pf2_intro_2.png" onmouseover="blockpf2()" onmouseout="nonepf2()" style="border-radius: 5px; height: 350px;">
+                        <div id="pofol_2_mouseover" onclick="block_pf2()"><p>개발 중입니다</p></div>
+                        <img src="img/pf2_intro_2.png" onmouseover="block_pf2_intro()" onmouseout="none_pf2_intro()" style="border-radius: 5px; height: 350px;">
                     </div>
                     <div id="pofol_2_intro">
                         <p><b>[ Servlet과 DB 이용한 MVC 모델2 기반 웹사이트 개발 ]</b><br><br>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div id="pofol_1_intro_picture_div" onclick="nonePf1()">
+            <div id="pofol_1_intro_picture_div" onclick="none_Pf1()">
                 <img src="img/pf1_intro_1.png">
                 <img src="img/pf1_intro_2.png">
                 <img src="img/pf1_intro_3.png">
@@ -181,22 +181,37 @@
         }
     }
     
-    function blockpf1(){
+
+    function block_pf1_intro(){
         document.getElementById('pofol_1_mouseover').style.display = 'block';
     }
     
-    function nonepf1(){
+    function none_pf1_intro(){
         document.getElementById('pofol_1_mouseover').style.display = 'none';
     }
     
-    function blockpf2(){
+    function block_pf2_intro(){
         document.getElementById('pofol_2_mouseover').style.display = 'block';
     }
     
-    function nonepf2(){
+    function none_pf2_intro(){
         document.getElementById('pofol_2_mouseover').style.display = 'none';
     }
     
+    function block_pf1(){
+        document.getElementById('pofol_1_intro_picture_div').style.display = 'block';
+    }
+    
+    function block_pf2(){
+        document.getElementById('pofol_2_intro_picture_div').style.display = 'block';
+    }
+    
+    function none_Pf1(){
+        document.getElementById('pofol_1_intro_picture_div').style.display = 'none';
+    }
+    
+    
+
 </script>
 </body>
 </html>
