@@ -172,7 +172,7 @@ a:hover {
 #pofol_page_container {
     position: relative;
     width: 80%;
-    height: 970px;
+    height: 1050px;
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
@@ -307,7 +307,7 @@ a:hover {
     width: 100%;
 }
 
-#GitBtn {
+.GitBtn {
     width: 100px;
     height: 40px;
     border: none;
