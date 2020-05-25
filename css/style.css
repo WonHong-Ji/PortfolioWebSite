@@ -307,6 +307,23 @@ a:hover {
     width: 100%;
 }
 
+#pofol_2_intro_picture_div {
+    position: fixed;
+    overflow: scroll;
+    z-index: 9;
+    display: none;
+    width: 70%;
+    height: 700px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#pofol_2_intro_picture_div img {
+    width: 100%;
+}
+
 .GitBtn {
     width: 100px;
     height: 40px;
