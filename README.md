@@ -3,7 +3,7 @@
 - 나이 : 1991년생(만29세)
 - 거주지 : 경상남도 김해시
 - 이메일 : 91calicali@gmail.com
-- 희망 직종 : 웹개발 프로그래머
+- 희망 직종 : 백엔드 프로그래머
 - 사용 가능한 언어/스크립트 : JAVA, JAVA-JSP, JAVA-Servlet, JavaScript, HTML, CSS, jQuery, MySQL
 - 사용 가능한 OA : MS Word, MS PowerPoint, MS Excel
 
